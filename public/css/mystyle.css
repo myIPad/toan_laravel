@@ -1,0 +1,8 @@
+.header{width: auto;height: 150px;background: orange}
+		.content{width: auto;height: 200px;background: blue}
+		.footer{width: auto;height: 100px;background: pink}
+
+#paginate {
+	list-style: none;
+	display: inline-flex;
+}

@@ -1,0 +1,9 @@
+<?php
+		Route::group(['prefix'=>'product'],function(){
+			Route::get('list',['as'=>'admin.product.index','uses'=>'ProductController@index']);
+			Route::get('add',['as'=>'admin.product.getstore','uses'=>'ProductController@create']);
+			Route::post('add',['as'=>'admin.product.poststore','uses'=>'ProductController@store']);
+			Route::get('edit/{id}',['as'=>'admin.product.getedit','uses'=>'ProductController@edit']);
+			Route::post('edit/{id}',['as'=>'admin.product.postedit','uses'=>'ProductController@update']);
+			Route::get('delete/{id}',['as'=>'admin.product.delete','uses'=>'ProductController@delete']);
+		});
