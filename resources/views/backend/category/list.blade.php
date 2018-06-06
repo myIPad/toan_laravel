@@ -40,4 +40,5 @@
 	</table>
 	<a href="{{ url('/admin/category/add') }}" class="btn btn-info">Thêm mới</a>
 </div>
+
 @stop()
